@@ -8,11 +8,15 @@ from pycallgraph2 import GlobbingFilter
 from module1 import func1
 from module2 import func2
 
-
+import numpy as np
 
 def main():
     func1()
-    #import pdb; pdb.set_trace()
+    a = 10
+    matrice = np.zeros(3)
+    print(matrice)
+    print(a)
+    import pdb; pdb.set_trace()
     func2()
 
 if __name__ == "__main__":
