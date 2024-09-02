@@ -15,5 +15,6 @@ class DPVO:
 
     def __call__(self):
         print("self.data : ", self.data)
-        output = self.network.patchify(self.data)
+        #output = self.network.patchify(self.data)
+        output = self.network.intermediate_process(self.data)
         print("output : ", output)
